@@ -52,6 +52,7 @@ var _ = Describe("(Integration) Karpenter", func() {
 	})
 
 	Context("Creating a cluster with Karpenter", func() {
+		params.ClusterName = clusterName
 		params.LogStacksEventsOnFailure()
 
 		It("should support karpenter", func() {
